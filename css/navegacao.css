@@ -1,0 +1,27 @@
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background-color: #0066b3;
+}
+
+.menu-navegacao {
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+}
+
+.menu-navegacao, .nome-logo, a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-navegacao a:hover {
+    color: #000000;
+    transition-duration: 0.5s;
+}
+
+.menu-navegacao p {
+    cursor: pointer;
+}

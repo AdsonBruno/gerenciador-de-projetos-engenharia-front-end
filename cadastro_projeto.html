@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Projeto</title>
+        <link rel="stylesheet" href="css/navegacao.css">
+        <link rel="stylesheet" href="css/formulario.css">
+
+        <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+
+            <nav class="navegacao">
+                <a href="#" class="nome-logo">Gerenciador de Projetos | Pessoal</a>
+                <div class="menu-navegacao">
+                    <a href="index.html">Home</a>
+                    <a href="gestao_engenheiro.html">Cadastro de Engenheiro</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="titulo-formulario">
+                    <h2>Cadastrar Projeto</h2>
+                </div>
+
+                <form id="form" class="form">
+                    <fieldset class="controle-formulario-projeto">
+                        <legend class="controle-formulario">Opção de projeto</legend>
+                        <select name="select" id="selecao-projeto">
+                            <option value="vazio"></option>
+                            <option value="projeto1">Projeto 1</option>
+                            <option value="projeto2">Projeto 2</option>
+                            <option value="projeto3">Projeto 3</option>
+                            <option value="projeto4">Projeto 4</option>
+                            <option value="projeto5">Projeto 5</option>
+                        </select>
+                        <img src="images/icons/atention.png" class="icone-projeto-erro">
+                        <img src="images/icons/Vector.png" class="icone-projeto-check">
+                        <small>Mensagem de erro</small>  
+                    </fieldset>
+                    
+                    <fieldset class="fieldset-controle-formulario">
+                        <legend class="titulo-fieldset">Cadastro de Gerente</legend>
+                        <div class="controle-formulario">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome-completo" placeholder="Informe seu nome completo">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>
+                        </div>
+                        
+                        <div class="controle-formulario">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" placeholder="Digite seu CPF">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <i class="fas fa-check-circulo"></i>
+                            <small>Mensagem de erro</small>    
+                        </div>
+                        
+                        <div class="controle-formulario">
+                            <label for="unidade de Trabalho">Unidade de Trabalho</label>
+                            <input type="text" id="unidade-trabalho" placeholder="Informe Unidade de Trabalho">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+                        
+                        <!-- Adicionando foto -->
+                        <div class="controle-formulario">
+                            <label for="adicionar-foto">Adicionar Foto</label>
+                            <input type="file" id="foto" name="arquivos" multiple>
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>  
+                        </div>
+                        
+                        <!-- Adiciona campo de texo para ddescrever a experiencia -->
+                        <div class="controle-formulario area-texto">
+                            <label for="experiencia">Descreva sua experiência</label>
+                            <textarea name="experiencia" id="experiencia" placeholder="Informe sua experiência"></textarea>
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>  
+                            
+                        </div>
+                        
+                        <div class="controle-formulario tipo-atividade">
+                            <label for="controle-formulario">Tipo de Atividade</label>
+                            <select name="select" id="tipo-atividade">
+                                <option value="vazio"></option>
+                                <option value="planejamento">Planejamento</option>
+                                <option value="execucao">Execução</option>
+                                <option value="controle">Controle</option>
+                                <option value="acompanhamento">Acompanhamento</option>
+                                <option value="avaliacao">Avaliação</option>
+                            </select>
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+                        
+                        <div class="controle-formulario outros">
+                            <label for="nome-atividade">Nome da atividade</label>
+                            <input type="text" id="nome-atividade" placeholder="Informe o nome da atividade">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+                        
+                        <div class="controle-formulario">
+                            <!-- Data de início do projeto -->
+                            <label for="duracao-inicio">Data Início</label>
+                            <input type="date" id="data-inicio" name="inicio">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+                        
+                        <div class="controle-formulario">
+                            
+                            <!-- Data final do projeto -->
+                            <label for="duracao">Data Fim</label>
+                            <input type="date" id="data-fim" name="fim">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check"> 
+                            <small>Mensagem de erro</small>    
+                        </div>
+                        
+                        <div class="controle-formulario">
+                            <label for="custo">Custo Total em R$</label>
+                            <input type="text" id="custo" placeholder="Informe o custo total R$">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Cadastrar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </body>
+
+    <!-- Script javaScript -->
+    <script src="js/scripts-cad.js"></script>
+</html>

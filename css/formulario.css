@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab';
+}
+
+/* .cabecalho { */
+    /* font-family: 'Roboto Slab', serif; */
+    /* min-height: 10px;10vh; */
+    /* background-image: url(../images/background.png); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* display: flex; */
+    /* flex-flow: column; */
+/* } */
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.container {
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rbga(0, 0, 0, 0.6);
+    width: 1000px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.titulo-formulario {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.form {
+    padding: 20px;
+}
+
+/* Inicio da configuração da opção de projeto */
+.controle-formulario-projeto {
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    height: 150px;
+}
+
+.controle-formulario-projeto select {
+    /* padding-right: 250px;
+    margin: 5px; */
+    border: 2px solid;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.controle-formulario-projeto img {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    visibility: hidden;
+}
+
+.controle-formulario-projeto small {
+    bottom: 10px;
+    left: 0;
+    visibility: hidden;
+}
+
+/*Sucesso e erro do primeiro fieldset*/
+
+
+.controle-formulario-projeto.sucesso img.icone-projeto-check {
+    visibility: visible;   
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+
+.controle-formulario-projeto.erro img.icone-projeto-erro {
+    visibility: visible;   
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+.controle-formulario-projeto.erro small {
+    visibility: visible;
+    color: #E74C3C;
+    bottom: 10px;
+    left: 0;
+    height: 140px;
+
+}
+
+.controle-formulario {
+    margin-bottom: 10px;
+    /* padding-bottom: 20px;  */
+    padding: 10px;
+    position: relative;
+}
+
+.controle-formulario label {
+    display: inline-block;
+    margin: 5px;
+}
+
+.controle-formulario input {
+    border: 2px solid;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.controle-formulario img {
+    position: absolute;
+    top: 50px;
+    right: 14px;
+    visibility: hidden;
+}
+
+
+.controle-formulario textarea {
+    border: 2px solid;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    /* height: 200px; */
+    padding: 10px;
+}
+
+.controle-formulario select {
+    /* padding-right: 250px;
+    margin: 5px; */
+    border: 2px solid;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.controle-formulario small {
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    /* background-color: #FC00FF; */
+    background-color: rgba(0, 0, 255, 0.7);/*blue;*/
+    border: 2px solid;
+    margin-top: 15px;
+    color: #FFF;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Erro e sucesso */
+.controle-formulario-projeto.sucesso select {
+    border-color: #18E46E;
+}
+
+.controle-formulario-projeto.erro select {
+    border-color: #E74C3C;
+}
+
+.controle-formulario.sucesso input {
+    border-color: #19e46e;
+}
+
+.controle-formulario.erro input {
+    border-color: #E74C3C;
+}
+
+.controle-formulario.erro textarea {
+    border-color: #E74C3C;
+}
+
+.controle-formulario.erro select {
+    border-color: #E74C3C;
+}
+
+.controle-formulario.sucesso img.icone-projeto-check {
+    visibility: visible;
+}
+.controle-formulario.erro img.icone-projeto-erro {
+    visibility: visible;
+}
+
+.controle-formulario.erro small {
+    visibility: visible;
+    color: #E74C3C;
+}
+

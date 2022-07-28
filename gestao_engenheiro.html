@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Projeto</title>
+        <link rel="stylesheet" href="css/navegacao.css">
+        <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+        <link rel="stylesheet" href="css/formulario.css">
+
+        <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+    </head> 
+
+    <body>
+
+        <header class="cabecalho">
+
+            <nav class="navegacao">
+                <a href="#" class="nome-logo">Gerenciador de Projetos | Pessoal</a>
+                <div class="menu-navegacao">
+                    <a href="index.html">Home</a>
+                    <a href="cadastro_projeto.html">Cadastro de Projeto</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <div class="container">
+                <div class="titulo-formulario">
+                    <h3>Cadastro Membros do Projeto</h3>
+                </div>
+
+                <form id="form" class="form">
+                    
+                    <fieldset class="fieldset-controle-formulario">
+                        <legend class="titulo-fieldset">Cadastro de Gerente</legend>
+                        <div class="controle-formulario">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome-completo" placeholder="Informe seu nome completo">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>
+                        </div> 
+
+                        <div class="controle-formulario">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" placeholder="Digite seu CPF">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <i class="fas fa-check-circulo"></i>
+                            <small>Mensagem de erro</small>    
+                        </div>
+
+                        <div class="controle-formulario">
+                            <label for="unidade de Trabalho">Unidade de Trabalho</label>
+                            <input type="text" id="unidade-trabalho" placeholder="Informe Unidade de Trabalho">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+
+                        <div class="controle-formulario">
+                            <label for="tempo-empresa">Tempo na empresa</label>
+                            <input type="text" id="tempo-empresa" placeholder="Informe tempo na empresa">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+
+                        <div class="controle-formulario">
+                            <label for="funcao-na-empresa">Função na empresa</label>
+                            <input type="text" id="funcao-na-empresa" placeholder="Informe função na empresa">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+
+                        <div class="controle-formulario">
+                            <label for="cargo">Cargo</label>
+                            <input type="text" id="cargo" placeholder="Informe cargo">
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+
+                        <div class="controle-formulario regiao-atendimento">
+                            <label for="controle-formulario">Região de atendimento</label>
+                            <select name="select" id="regiao-atendimento">
+                                <option value="vazio"></option>
+                                <option value="regiao1">Regiao 1</option>
+                                <option value="regiao2">Regiao 2</option>
+                                <option value="regiao3">Regiao 3</option>
+                                <option value="regiao4">Regiao 4</option>
+                                <option value="regiao5">Regiao 5</option>
+                            </select>
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>    
+                        </div>
+
+                        <div class="controle-formulario area-texto">
+                            <label for="experiencia">Descreva sua experiência</label>
+                            <textarea name="experiencia" id="experiencia" placeholder="Informe sua experiência"></textarea>
+                            <img src="images/icons/atention.png" class="icone-projeto-erro">
+                            <img src="images/icons/Vector.png" class="icone-projeto-check">
+                            <small>Mensagem de erro</small>  
+                        </div>
+
+                        <div class="controle-formulario checkbox">
+                            <label for="opcoes-projeto">Opções de projeto (escolha 3)</label>
+                            
+                            <div class="opcoes-checkbox">
+                                <input type="checkbox" id="projeto1" name="projeto1" value="Projeto 1" placeholder="Projeto 1">
+                                <label for="projeto1">Projeto 1</label>
+                            </div>
+
+                            <div class="opcoes-checkbox">
+                                <input type="checkbox" id="projeto2" name="projeto2" value="Projeto 2" placeholder="Projeto 2">
+                                <label for="projeto2">Projeto 2</label>
+                            </div>
+
+                            <div class="opcoes-checkbox">
+                                <input type="checkbox" id="projeto3" name="projeto3" value="Projeto 3" placeholder="Projeto 3">
+                                <label for="projeto3">Projeto 3</label>
+                            </div>
+
+                            <div class="opcoes-checkbox">
+                                <input type="checkbox" id="projeto4" name="projeto4" value="Projeto 4" placeholder="Projeto 4">
+                                <label for="projeto4">Projeto 4</label>
+                            </div>
+
+                            <div class="opcoes-checkbox">
+                                <input type="checkbox" id="projeto5" name="projeto5" value="Projeto 5" placeholder="Projeto 5">
+                                <label for="projeto5">Projeto 5</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </main>
+    </body>
+
+    <!-- Script javaScript -->
+    <script src="js/gerencia-pessoal.js"></script>
+</html>

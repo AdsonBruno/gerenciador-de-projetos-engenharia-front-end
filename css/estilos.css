@@ -1,0 +1,75 @@
+/* Essa página contém estilo comúm para ambas as páginas */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* Parte do menú */
+.cabecalho {
+    font-family: 'Roboto Slab', serif;
+    min-height: 100vh;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+}
+
+/* Menú de opções com botões grandes */
+.menu-opcoes-cadastro {
+    display: flex;
+    justify-content: space-between;
+    padding: 10em 24em;
+    align-items: center;
+}
+
+.botao-cp {
+    padding: 55px;
+}
+
+.botao-cp a {
+    border-radius: 30px;
+    border: 1px solid #000000;
+    background-color: grey;
+    opacity: 0.8;
+    height: 3rem;
+    width: 7rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Mudando cor do botão ao passar mouse */
+.botao-cp a:hover {
+    background-color: #ECF2F6;
+    color:#000000;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+/* Botão para o menú cadastro de engenheiro */
+.botao-ce {
+    padding: 55px;
+}
+
+.botao-ce a {
+    border-radius: 30px;
+    border: 1px solid #000000;
+    background-color: grey;
+    opacity: 0.8;
+    height: 3rem;
+    width: 7rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Mudando cor do botão de cadastro do engenheiro ao passar o mouse */
+.botao-ce a:hover  {
+    background-color: #ECF2F6;
+    color: #000000;
+    font-weight: bold;
+    transition-duration: 0.5s;
+
+}
