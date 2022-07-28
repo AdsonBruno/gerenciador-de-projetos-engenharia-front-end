@@ -10,6 +10,12 @@ Projeto front-end *Gerenciador de projetos*
 
 <p align="center">
     <img align="center" alt="tela home" src="assets/home.png" width="500" height="250"/>
+</p>
+
+<p align="center">
     <img align="center" alt="tela cadastro de engenheiro" src="assets/Cadastro-de-engenheiro.png" width="500" height="250"/>
+</p>
+
+<p align="center">
     <img align="center" alt="tela cadastro de projeto" src="assets/cadastro-de-projeto.png" width="500" height="250"/>
 </p>
